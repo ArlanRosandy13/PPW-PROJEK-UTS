@@ -1,0 +1,32 @@
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+    font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: var(--neutral-bg);
+    border-bottom: 1px var(--border-color) solid;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+#filler {
+    height: 69px;
+    /* nice */
+    width: 100%;
+}
+
+@media screen {}
