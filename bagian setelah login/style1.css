@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* MAIN CARD CONTAINER */
+.error-card {
+    background-color: #121826;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    border: 1px solid #1e293b;
+    text-align: center;
+    position: relative;
+}
+
+/* ICON WARNING DENGAN GARIS LINGKARAN TIPIS */
+.icon-wrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 24px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ef4444;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+}
+
+.icon-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(239, 68, 68, 0.3);
+}
+
+.icon-wrapper svg {
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+
+/* BADGE KODE EROR */
+.error-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #f87171;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BATAS PERCOBAAN BOX */
+.attempts-box {
+    background-color: #0d1322;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 32px;
+}
+
+.attempts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+
+.attempts-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.attempts-title svg {
+    color: #fbbf24;
+    width: 16px;
+    height: 16px;
+}
+
+.attempts-badge {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* PROGRESS BAR */
+.progress-track {
+    width: 100%;
+    height: 6px;
+    background-color: #1e293b;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress-fill {
+    width: 66%; /* 2 dari 3 percobaan */
+    height: 100%;
+    background: linear-gradient(90deg, #f59e0b 0%, #ef4444 100%);
+    border-radius: 3px;
+}
+
+.attempts-footer-text {
+    font-size: 0.78rem;
+    color: #64748b;
+}
+
+/* BUTTONS GROUP */
+.btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+}
+
+.btn-dark {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    border: 1px solid #334155;
+}
+
+.btn-dark:hover {
+    background-color: #334155;
+    color: #ffffff;
+}

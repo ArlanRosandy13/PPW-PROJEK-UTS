@@ -1,0 +1,151 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Dark Navy Background */
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    background-color: #1e293b;
+    width: 100%;
+    max-width: 440px;
+    padding: 32px 28px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+    text-align: center;
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ICON BADGES */
+.icon-badge {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10b981; /* Lingkaran Hijau */
+    color: #022c22;             /* Warna Centang */
+    border: 2px solid rgba(74, 222, 128, 0.3);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); /* Efek Glowing */
+
+    outline: 1.5px solid rgba(16, 185, 129, 0.4); /* Garis tipis transparan */
+    outline-offset: 8px;
+}
+
+.icon-badge svg {
+    width: 36px;
+    height: 36px;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(16, 185, 129, 0.08); /* Hijau transparan tebal */
+    border: 1px solid #0d4a3e; /* Border hijau gelap */
+    color: #10b981; /* Warna teks hijau neon */
+    padding: 8px 16px;
+    border-radius: 9999px; /* Pill style */
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.icon-shield {
+    width: 18px;
+    height: 18px;
+}
+
+/* SUCCESS STATE STYLING */
+.card-container .icon-badge {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 2px solid rgba(74, 222, 128, 0.3);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+}
+
+.card-container {
+    color: #f8fafc;
+}
+
+/* ERROR STATE STYLING */
+.card-container.failed .icon-badge {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 2px solid rgba(248, 113, 113, 0.3);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+}
+
+/* TYPOGRAPHY */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 27px;
+}
+
+/* BUTTONS */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #475569;
+    color: #cbd5e1; /* <-- Ubah warna teks di sini (contoh: abu-abu terang / putih) */
+}
+
+.btn-outline:hover {
+    border-color: #94a3b8;
+    color: #ffffff; /* Warna saat kursor diarahkan (hover) */
+}
