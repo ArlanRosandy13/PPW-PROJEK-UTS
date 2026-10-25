@@ -10,6 +10,14 @@
     font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+.container {
+    @media (width >=64rem) {
+        max-width: 64rem;
+    }
+
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -22,11 +30,59 @@
     z-index: 10;
 }
 
+.navbar_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_left,
+.navbar_right {
+    display: flex;
+    gap: 8px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.button-reg {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    gap: 8px;
+}
+
+.button-log {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid orange;
+}
+
+.hero {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top left;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    min-height: 60vh;
+    padding: 0 20px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/img/nasduk.jpeg);
+    background-position: center;
+}
 
 #filler {
     height: 69px;
     /* nice */
     width: 100%;
 }
-
-@media screen {}
